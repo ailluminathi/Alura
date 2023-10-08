@@ -1,7 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
+    height: 100vh;
     background-color: black;
     color: white;
 }
-strong {
+.titulo-destaque {
     color: #22D4FD;
+}
+
+img {
+    height: 50vh;
 }
