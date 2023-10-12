@@ -1,0 +1,7 @@
+.cabecalho__container {
+    display: flex;
+}
+
+.logo__item {
+    margin-right: 200px;
+}
