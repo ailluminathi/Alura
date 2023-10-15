@@ -18,6 +18,10 @@
         display: block;
     }   
 
+    .cabecalho {
+        justify-self: center;
+    }
+
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
     }
@@ -43,6 +47,10 @@
     .cabecalho .cabecalho__logo,
     .cabecalho__botao__avancar {
         display: none;
+    }
+
+    .menu-lateral {
+        width: 208px;
     }
 
     .navbar {
@@ -73,6 +81,10 @@
     .navbar,
     .cabecalho__logo {
         display: none;
+    }
+
+    .menu-lateral {
+        width: 228px;
     }
 
 }
