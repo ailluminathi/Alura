@@ -1,0 +1,14 @@
+.secao-horizontal .cartao {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 3rem 0.9rem;
+}
+
+.cartao-horizontal .cartao__imagem {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.secao-horizontal .cartao__botao {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
