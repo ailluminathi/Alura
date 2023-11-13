@@ -1,0 +1,29 @@
+.escrita {
+    display: inline-block;
+}
+
+h1 {
+    font-family: monospace;
+    border-right: 2.5px solid green;
+    animation: cursor .5s infinite, escrevendo 3.5s steps(20, end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: green;
+    }
+}
+
+@keyframes escrevendo {
+    from {
+        width: 0;
+    }   
+    to {
+        width: 100%;
+    }
+}
