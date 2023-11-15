@@ -9,7 +9,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+    --cor-hover: #272727c5;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -30,7 +30,27 @@
     font-size: 1.5rem;
     color: var(--cor-terciaria);
     text-decoration: none;
+    position: relative;
 }
+
+/* efeito */
+
+.cabecalho__menu__link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: var(--cor-terciaria);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.cabecalho__menu__link:hover::before {
+    width: 100%;
+}
+
+/* ----- */
 
 body {
     background-color: var(--cor-primaria);
@@ -41,12 +61,13 @@ body {
     width: 40%;
     border-radius: 5%;
     border: 2px solid var(--cor-terciaria);
-    padding: 5px;
+    padding: 10px;
+    margin-top: 5em;
 }
 
 .apresentacao {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 5% 15%;
     gap: 82px;
@@ -78,6 +99,14 @@ body {
     color: var(--cor-terciaria);
 }
 
+.apresentacao__conteudo__texto a:hover {
+    text-decoration: underline;
+}
+
+.apresentacao__conteudo__texto li {
+    margin-bottom: 1em;
+}
+
 .apresentacao__links {
     display: flex;
     justify-content: space-between;
@@ -107,7 +136,7 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__links_link:hover {
+.apresentacao__links_navegacao:hover {
     background-color: var(--cor-hover);
     padding: 10px;
     transition-duration: 300ms;
@@ -117,19 +146,31 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     color: var(--cor-primaria);
-    padding: 23px;
+    padding: .25em;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1em;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.rodape a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
 
     .cabecalho {
         padding: 10%;
+        padding-bottom: 0;
+        width: 100vw;
     }
 
     .cabecalho__menu {
-        justify-content: center;
+        justify-content: flex-start;
+        gap: 25px;
     }
 
     .apresentacao {
@@ -139,9 +180,15 @@ body {
 
     .apresentacao__imagem {
         width: 80%;
+        border-radius: 7%;
+        margin-top: 10px;
     }
 
     .apresentacao__conteudo {
         width: auto;
+    }
+
+    .apresentacao__links_navegacao {
+        width: 100%;
     }
 }
