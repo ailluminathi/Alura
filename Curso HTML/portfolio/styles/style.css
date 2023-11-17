@@ -53,6 +53,7 @@
 /* ----- */
 
 body {
+    width: 100vw;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
