@@ -104,6 +104,10 @@ body {
     text-decoration: underline;
 }
 
+.apresentacao__conteudo__texto ul {
+    font-size: 1em;
+}
+
 .apresentacao__conteudo__texto li {
     margin-bottom: 1em;
 }
@@ -202,5 +206,9 @@ body {
 
     .apresentacao__links_navegacao {
         width: 100%;
+    }
+
+    .cabecalho__menu__link::before {
+        display: none;
     }
 }
