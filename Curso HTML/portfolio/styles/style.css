@@ -166,12 +166,15 @@ body {
     .cabecalho {
         padding: 10%;
         padding-bottom: 0;
-        width: 100vw;
     }
 
     .cabecalho__menu {
-        justify-content: flex-start;
-        gap: 25px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cabecalho__menu a {
+        font-size: 1em;
     }
 
     .apresentacao {
