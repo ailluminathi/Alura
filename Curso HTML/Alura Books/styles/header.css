@@ -55,3 +55,7 @@
 .container__botao {
     visibility: hidden;
 }
+
+@media screen and (min-width: 1024px) {
+    
+}
