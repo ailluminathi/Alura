@@ -30,4 +30,46 @@ header ul a {
   color: #0C0421;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+}
+
+#home {
+  max-width: 1040px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home .textos-home {
+  max-width: 464px;
+}
+#home .textos-home h1 {
+  font-size: 42px;
+  color: #0C0421;
+  margin-bottom: 2rem;
+  font-family: "Krona One", sans-serif;
+}
+#home .textos-home h1 span {
+  color: #4E75FF;
+}
+#home .img-home {
+  max-width: 474px;
+}
+#home .img-home img {
+  width: 100%;
+}
+#home .btn-main {
+  width: 280px;
+  height: 66px;
+  border-radius: 40px;
+  background-color: #4E75FF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #E8F5C8;
+  border: none;
+}
+#home .btn-main:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.432);
 }/*# sourceMappingURL=styles.css.map */

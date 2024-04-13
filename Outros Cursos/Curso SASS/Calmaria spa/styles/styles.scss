@@ -1,15 +1,4 @@
-// Variaveis
-    //Cores
-    $cor-primaria: #0C0421;
-    $cor-secundaria: #4E75FF;
-    $cor-terciaria: #85A0FF;
-    $cor-quartenaria: #E8F5C8;
-    $cor-default: #CAD4FA;
-    $gradiente-primario: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
-    $gradiente-secundario: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
-    $ft-textos: 'Montserrat', sans-serif;
-    $ft-titulos: 'Krona One', sans-serif;
-
+@use 'abstract/variaveis';
 
 body {
     margin: 0;
@@ -18,7 +7,7 @@ body {
 }
 
 header {
-    background: $gradiente-primario;
+    background: variaveis.$gradiente-primario;
     padding: 2rem;
 
     nav {
@@ -42,9 +31,55 @@ header {
         }
         a {
             text-decoration: none;
-            color: $cor-primaria;
+            color: variaveis.$cor-primaria;
             font-weight: 500;
-            font-family: $ft-textos;
+            font-family: variaveis.$ft-textos;
         }
+    }
+  }
+
+  #home {
+    max-width: 1040px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .textos-home {
+        max-width: 464px;
+        h1 {
+            font-size: 42px;
+            color: $cor-primaria;
+            margin-bottom: 2rem;
+            font-family: $ft-titulos;
+            span {
+                color: $cor-secundaria;
+            }
+        }
+    }
+
+    .img-home {
+        max-width: 474px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .btn-main {
+        width: 280px;
+        height: 66px;
+        border-radius: 40px;
+        background-color: variaveis.$cor-secundaria;
+        font-family: variaveis.$ft-textos;
+        font-weight: 600;
+        font-size: 22px;
+        color: variaveis.$cor-quartenaria;
+        border: none;
+    }
+
+    .btn-main:hover {
+        cursor: pointer;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.432);
     }
   }
