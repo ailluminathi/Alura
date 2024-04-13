@@ -1,42 +1,7 @@
 @use 'abstract/variaveis';
+@use './abstract/root';
+@use './components/header';
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background: variaveis.$gradiente-primario;
-    padding: 2rem;
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.6rem;
-    }
-
-    .linha {
-        border-top: 1px solid black;
-        width: 80%;
-    }
-
-    ul {
-        display: inline-flex;
-        gap: 2rem;
-
-        li {
-            list-style-type: none;
-        }
-        a {
-            text-decoration: none;
-            color: variaveis.$cor-primaria;
-            font-weight: 500;
-            font-family: variaveis.$ft-textos;
-        }
-    }
-  }
 
   #home {
     max-width: 1040px;
