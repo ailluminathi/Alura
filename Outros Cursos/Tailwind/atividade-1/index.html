@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F2DAE7'
+                    },
+
+                    fontFamily: {
+                        titulo: ['Vast Shadow', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="h-screen flex justify-center items-center">
+    <div class="flex items-center shadow-2xl">
+        <img class="h-36" src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
+        <div class="p-10 bg-gradient-to-r from-pink-300 to-slate-400 w-96 h-36 flex flex-col justify-center pl-8 py-8 gap-6 rounded-lg">
+            <p class="font-black text-5xl leading-none font-titulo text-primary">Náthali</p>
+            <p class="text-2xl">Desenvolvedora Front-end</p>
+        </div>
+    </div>
+</body>
