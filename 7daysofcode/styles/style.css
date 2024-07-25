@@ -136,4 +136,28 @@ header .cabecalho__login :nth-child(2):hover {
   header .cabecalho__login {
     gap: 0px;
   }
+}
+.secao_cabecalho {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 96px 0;
+  text-align: center;
+}
+.secao_cabecalho span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8E2424;
+}
+.secao_cabecalho h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #101828;
+}
+.secao_cabecalho p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #667085;
 }/*# sourceMappingURL=style.css.map */
