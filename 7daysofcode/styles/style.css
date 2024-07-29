@@ -160,4 +160,48 @@ header .cabecalho__login :nth-child(2):hover {
   font-size: 20px;
   font-weight: 400;
   color: #667085;
+}
+
+.secao_metrica {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  gap: 32px;
+  align-items: center;
+  padding: 0 32px 96px 32px;
+  width: 80%;
+  margin: auto;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.secao_metrica div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+}
+.secao_metrica div h3 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #8E2424;
+}
+.secao_metrica div span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #101828;
+}
+.secao_metrica div p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+
+@media (max-width: 900px) {
+  .secao_metrica div {
+    width: 40%;
+  }
+}
+@media (max-width: 420px) {
+  .secao_metrica div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

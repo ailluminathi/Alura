@@ -1,0 +1,57 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.secao_metrica {
+    display: flex;
+    font-family: variaveis.$fonte-padrao;
+    gap: 32px;
+    align-items: center;
+    padding: 0 32px 96px 32px;
+    width: 80%;
+    margin: auto;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 20%;
+
+        h3 {
+            font-weight: 600;
+            font-size: 60px;
+            color: variaveis.$cor-primaria;
+        }
+
+        span {
+            font-size: 18px;
+            font-weight: 500;
+            color: variaveis.$cor-terciaria;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: variaveis.$cor-secundaria;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .secao_metrica {
+
+        div {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .secao_metrica {
+
+        div {
+            width: 100%;
+        }
+    }
+}
