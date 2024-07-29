@@ -1,0 +1,97 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.secao_main {
+    font-family: variaveis.$fonte-padrao;
+    padding: 96px 0px;
+    
+    .time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            color: variaveis.$cor-primaria;
+            background-color: #8E24240D;
+            padding: 4px 12px;
+            border-radius: 16px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: variaveis.$cor-terciaria;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: variaveis.$cor-secundaria;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            overflow: hidden;
+            margin-top: 35px;
+
+            img {
+                width: 85%;
+            }
+        }
+    }
+
+    .vagas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        width: 65%;
+        margin: 30px auto;
+
+        h3 {
+            align-self: start;
+            font-weight: 500;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: variaveis.$cor-terciaria;
+        }
+
+        .card {
+            border: 1px solid #EAECF0;
+            padding: 24px 24px 28px 24px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+            box-sizing: border-box;
+            
+            .titulo_vaga {
+                color: variaveis.$cor-terciaria;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+
+                span {
+                    color: variaveis.$cor-secundaria;
+                    font-weight: 500;
+                }
+            }
+        }
+}
+}

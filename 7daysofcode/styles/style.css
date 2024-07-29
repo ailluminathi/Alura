@@ -204,4 +204,133 @@ header .cabecalho__login :nth-child(2):hover {
   .secao_metrica div {
     width: 100%;
   }
+}
+.secao_main {
+  font-family: "Inter", sans-serif;
+  padding: 96px 0px;
+}
+.secao_main .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.secao_main .time span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8E2424;
+  background-color: rgba(142, 36, 36, 0.0509803922);
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+.secao_main .time h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #101828;
+}
+.secao_main .time p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #667085;
+}
+.secao_main .time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.secao_main .time div img {
+  width: 85%;
+}
+.secao_main .vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 65%;
+  margin: 30px auto;
+}
+.secao_main .vagas h3 {
+  align-self: start;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #101828;
+}
+.secao_main .vagas .card {
+  border: 1px solid #EAECF0;
+  padding: 24px 24px 28px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.secao_main .vagas .card .titulo_vaga {
+  color: #101828;
+  font-size: 18px;
+  font-weight: 500;
+}
+.secao_main .vagas .card div {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.secao_main .vagas .card div span {
+  color: #667085;
+  font-weight: 500;
+}
+
+.secao_depoimento {
+  background-color: rgba(195, 25, 25, 0.031372549);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 64px;
+  border-radius: 16px;
+  width: 85%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.secao_depoimento span {
+  color: #8E2424;
+  font-size: 14px;
+  font-weight: 600;
+}
+.secao_depoimento p {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 500;
+}
+.secao_depoimento .depoimento_informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.secao_depoimento .depoimento_informacoes .depoimento_img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+.secao_depoimento .depoimento_informacoes .depoimento_img img {
+  height: 100%;
+  position: absolute;
+  left: -15px;
+}
+.secao_depoimento .depoimento_informacoes .informacoes_nome {
+  color: #101828;
+  font-weight: 500;
+}
+.secao_depoimento .depoimento_informacoes .informacoes_cargo {
+  color: #667085;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
