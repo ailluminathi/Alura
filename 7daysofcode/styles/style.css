@@ -167,6 +167,7 @@ header .cabecalho__login :nth-child(2):hover {
   font-family: "Inter", sans-serif;
   gap: 32px;
   align-items: center;
+  justify-content: center;
   padding: 0 32px 96px 32px;
   width: 80%;
   margin: auto;
@@ -214,6 +215,7 @@ header .cabecalho__login :nth-child(2):hover {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  text-align: center;
 }
 .secao_main .time span {
   font-size: 14px;
@@ -297,6 +299,9 @@ header .cabecalho__login :nth-child(2):hover {
   width: 85%;
   margin: auto;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .secao_depoimento span {
   color: #8E2424;
@@ -333,4 +338,10 @@ header .cabecalho__login :nth-child(2):hover {
 .secao_depoimento .depoimento_informacoes .informacoes_cargo {
   color: #667085;
   font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .secao_depoimento p {
+    font-size: 26px;
+  }
 }/*# sourceMappingURL=style.css.map */

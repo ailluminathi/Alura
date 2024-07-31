@@ -10,6 +10,9 @@
     width: 85%;
     margin: auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 
     span {
         color: variaveis.$cor-primaria;
@@ -51,6 +54,15 @@
         .informacoes_cargo {
             color: variaveis.$cor-secundaria;
             font-weight: 400;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .secao_depoimento {
+
+        p {
+            font-size: 26px;
         }
     }
 }
