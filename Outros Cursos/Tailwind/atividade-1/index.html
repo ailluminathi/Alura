@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+       tailwind.config = {
             theme: {
                 extend: {
                     colors: {
@@ -15,22 +15,36 @@
                     },
                     fontFamily: {
                         titulo: ['Vast Shadow', 'cursive']                    
-                    }
+                    },
+                    keyframes: {
+                        sino_kf: {
+                            '0%, 100%': {
+                                transform: 'rotate(-10deg)'
+                            },
+                            '50%': {
+                                transform: 'rotate(10deg)'
+                            },
+                        }
+                    },
+                    animation: {
+                        sino: 'sino_kf 0.31s ease-in-out infinite'
+                    },
                 }
             }
         }
+
     </script>
 </head>
 <body>
-  <div class="flex w-fit m-auto my-10">
+  <div class="flex w-fit m-auto my-10 shadow-2xl">
     <img class="h-44" src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
     <div class="p-10 flex flex-col bg-gradient-to-r from-pink-300 to-slate-400 justify-center h-44">
-      <p class="text-6xl font-black text-primary font-titulo">Náthali</p>
+      <p class="text-6xl font-black text-primary font-titulo">Gabriela</p>
       <p class="text-4xl mb-4">Desenvolvedora Front-end</p>
-      <ul class="flex gap-3 mb-4">
-        <li><a class="hover:font-bold hover:text-primary" href="https://www.linkedin.com/in/nathalisantos9/">Linkedin</a></li>
-        <li><a class="hover:font-bold hover:text-primary" href="mailto:nathiisantos9@gmail.com">Email</a></li>
-        <li><a class="hover:font-bold hover:text-primary" href="https://github.com/ailluminathi">Github</a></li>
+      <ul class="flex gap-3 mb-4 group">
+        <li class="group-hover:animate-sino"><a class="hover:font-bold hover:text-primary" href="https://www.linkedin.com/in/nathalisantos9/">Linkedin</a></li>
+        <li class="group-hover:animate-sino"><a class="hover:font-bold hover:text-primary" href="mailto:nathiisantos9@gmail.com">Email</a></li>
+        <li class="group-hover:animate-sino"><a class="hover:font-bold hover:text-primary" href="https://github.com/ailluminathi">Github</a></li>
       </ul>
     </div>
   </div>

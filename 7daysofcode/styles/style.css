@@ -1,0 +1,347 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 0px 32px;
+  margin: 20px 50px;
+}
+header a {
+  text-decoration: none;
+}
+header .cabecalho__titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .cabecalho__titulo a {
+  color: #3A404E;
+  font-size: 18px;
+}
+header .cabecalho__nav {
+  display: flex;
+  gap: 40px;
+}
+header .cabecalho__nav a {
+  color: #667085;
+  font-size: 16px;
+  position: relative;
+}
+header .cabecalho__nav a:hover {
+  color: #8E2424;
+}
+header .cabecalho__nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #8E2424;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+header .cabecalho__nav a:hover::before {
+  width: 100%;
+}
+header .cabecalho__login {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+header .cabecalho__login a {
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #667085;
+}
+header .cabecalho__login :nth-child(2) {
+  background-color: #8E2424;
+  color: white;
+  border: 1px solid #8E2424;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
+}
+header .cabecalho__login :nth-child(2):hover {
+  background-color: #b33838;
+  border: 1px solid #b33838;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    padding: 0 5px;
+  }
+  header .cabecalho__nav {
+    gap: 10px;
+  }
+  header .cabecalho__login {
+    gap: 0px;
+  }
+}
+.secao_cabecalho {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 96px 0;
+  text-align: center;
+}
+.secao_cabecalho span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8E2424;
+}
+.secao_cabecalho h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #101828;
+}
+.secao_cabecalho p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #667085;
+}
+
+.secao_metrica {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px 96px 32px;
+  width: 80%;
+  margin: auto;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.secao_metrica div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+}
+.secao_metrica div h3 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #8E2424;
+}
+.secao_metrica div span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #101828;
+}
+.secao_metrica div p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+
+@media (max-width: 900px) {
+  .secao_metrica div {
+    width: 40%;
+  }
+}
+@media (max-width: 420px) {
+  .secao_metrica div {
+    width: 100%;
+  }
+}
+.secao_main {
+  font-family: "Inter", sans-serif;
+  padding: 96px 0px;
+}
+.secao_main .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.secao_main .time span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8E2424;
+  background-color: rgba(142, 36, 36, 0.0509803922);
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+.secao_main .time h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #101828;
+}
+.secao_main .time p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #667085;
+}
+.secao_main .time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.secao_main .time div img {
+  width: 85%;
+}
+.secao_main .vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 65%;
+  margin: 30px auto;
+}
+.secao_main .vagas h3 {
+  align-self: start;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #101828;
+}
+.secao_main .vagas .card {
+  border: 1px solid #EAECF0;
+  padding: 24px 24px 28px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.secao_main .vagas .card .titulo_vaga {
+  color: #101828;
+  font-size: 18px;
+  font-weight: 500;
+}
+.secao_main .vagas .card div {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.secao_main .vagas .card div span {
+  color: #667085;
+  font-weight: 500;
+}
+
+.secao_depoimento {
+  background-color: rgba(195, 25, 25, 0.031372549);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 64px;
+  border-radius: 16px;
+  width: 85%;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.secao_depoimento span {
+  color: #8E2424;
+  font-size: 14px;
+  font-weight: 600;
+}
+.secao_depoimento p {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 500;
+}
+.secao_depoimento .depoimento_informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.secao_depoimento .depoimento_informacoes .depoimento_img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+.secao_depoimento .depoimento_informacoes .depoimento_img img {
+  height: 100%;
+  position: absolute;
+  left: -15px;
+}
+.secao_depoimento .depoimento_informacoes .informacoes_nome {
+  color: #101828;
+  font-weight: 500;
+}
+.secao_depoimento .depoimento_informacoes .informacoes_cargo {
+  color: #667085;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .secao_depoimento p {
+    font-size: 26px;
+  }
+}/*# sourceMappingURL=style.css.map */
