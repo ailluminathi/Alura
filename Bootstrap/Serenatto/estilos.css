@@ -47,8 +47,44 @@ input[type="checkbox"]:focus {
 
 .botao-padrao {
   background-color: var(--marrom-claro);
+  color: black;
 }
 
 .botao-padrao:hover {
   background-color: var(--marrom-escuro);
+  color: black;
+}
+
+#nivel-satisfacao {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-range::-webkit-slider-thumb,
+footer {
+  background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link,
+  .card-body,
+  .offcanvas,
+  .accordion,
+  .btn {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+    --bs-body-color: white;
+  }
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
